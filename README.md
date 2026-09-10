@@ -39,15 +39,7 @@ In total, the dataset contains **85 attributes and 754,918 records**. Most recor
 
 `laptop_model` is the central product table. It connects laptop products to their brands, CPU models, GPU models, and benchmark results.
 
-```mermaid
-erDiagram
-    BRAND ||--o{ CPU_MODEL : produces
-    BRAND ||--o{ GPU_MODEL : produces
-    BRAND ||--o{ LAPTOP_MODEL : owns
-    CPU_MODEL ||--o{ LAPTOP_MODEL : powers
-    GPU_MODEL ||--o{ LAPTOP_MODEL : powers
-    LAPTOP_MODEL ||--o| LAPTOP_BENCHMARK_RESULT : has
-```
+<img width="1239" height="1007" alt="image" src="https://github.com/user-attachments/assets/b54f6297-c1b0-49be-b0b0-a52c274e2190" />
 
 The user-event table requires JSON extraction to identify event-specific information and create links between user behavior and laptop models.
 
