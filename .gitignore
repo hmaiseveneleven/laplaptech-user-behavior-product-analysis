@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Original dataset - not for redistribution
+data/raw/
+*.csv
+
+# Power BI temporary files
+*.pbit
+~$*.pbix
+
+# Local and temporary files
+.DS_Store
+Thumbs.db
+*.tmp
